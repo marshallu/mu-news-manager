@@ -148,6 +148,33 @@ if( function_exists('acf_add_local_field_group') ):
 				'first_day' => 1,
 			),
 			array(
+				'key' => 'field_61d704629805e',
+				'label' => 'Show Read More Button',
+				'name' => 'homepage_breaking_news_show_button',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_617bfa0fd7572',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => '',
+				'default_value' => 1,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
 				'key' => 'field_5f58cf01e499b',
 				'label' => 'Link to external URL',
 				'name' => 'url_field',
